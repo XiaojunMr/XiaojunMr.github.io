@@ -355,12 +355,8 @@ function canvasCtx(cavsWidth,cavsHeight,dataImg){
 		var imageHeight=2*cavsWidth/3*scale;
 		var dx =canvas.width/2-imageWidth/2;
 		var dy =canvas.height/2-imageHeight/2;
-		console.log(dx)
-		console.log(dy)
 		ctx.clearRect(0,0,canvas.width,canvas.height)
 		ctx.drawImage(image,dx,dy,imageWidth,imageHeight)
-		console.log(imageWidth)
-		console.log(imageHeight)
 		ctx.drawImage(watermarkCanvas,canvas.width-watermarkCanvas.width,canvas.height-watermarkCanvas.height)
 
 	}
