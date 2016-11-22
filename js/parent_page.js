@@ -16,7 +16,6 @@ window.onload = function(){
 	var marquee_ul2_li =  document.querySelectorAll(".marquee .box2 ul li a");
 	marquee_box.style.width = marquee_width*2 + "px";
 	marquee_box2.style.width = marquee_width*2 + "px";
-	console.log(marquee_ul_li);
 function marquee_show(width){
 	var left = 0;
 	var left2 = 0;
@@ -112,7 +111,6 @@ function UlTimer(){
 	var iHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
 	var windowHeight = window.innerHeight;
 function chuangkou(){
-	console.log(scrollTop,iHeight,iWidth);
 	if(iWidth>=997){
 		body.style.width=997+"px";
 	}else{
@@ -144,7 +142,6 @@ function changeBodyWidth(){
 		container[i].style.left = w/2 + "px";
 		container[i].style.marginLeft = -container[i].offsetWidth/2 + "px"
 	}
-	console.log(body.style.width)
 }
 	// ===== 拖拽移动
 	// var dragging= false;
