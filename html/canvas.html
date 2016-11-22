@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas画布放大效果</title>
+	<style>
+		body{
+			position: relative;
+		}
+		.div1{
+			position: relative;
+			left: 50%;
+			margin-left:  -75px;
+			height: 20px;
+			width: 180px;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="../data/data.js"></script>
+	<script type="text/javascript" src="../js/pandect.js"></script>
+</head>
+<body>
+<div class="div1"><span>拖拽等效果请自己试验</span></div>	
+<canvas id="canvas" style="display: block;margin: 30px auto; border:1px solid red;">
+	您的版本不支持canvas
+	
+	</canvas>
+	<input type="range" name="" id ="scale_range" min="0.5" max="3.0" step="0.01" value="1.0" style="display: block;margin: 5px auto;width: 500px"/>
+	<p style="margin: 5px auto; text-align: center;">放大倍数0.5~3.0</p>
+	<canvas id="watermark_canvas" style="display: none;margin: 0 auto; border:1px solid red;">
+		您的版本不支持canvas	
+	</canvas>
+	<p style="margin: 30px auto 0 auto; text-align: center;">点击图片位置即可相应放大,放大倍数为原图倍数：范围半径75px</p>
+	<canvas id="canvasDa"  style="display:block;margin: 0 auto; border:1px solid red;">	
+	</canvas>
+	<canvas id="offCanvas" style="display: none;"></canvas>
+</body>
+<script type="text/javascript" src="../js/canvasJS.js"></script>
+</html>
