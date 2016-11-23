@@ -7,7 +7,7 @@
     
 
     <title>
-      那些年我们走过的JS闭包，作用域，this | 疯狂的码蚁 
+      那些年我们走过的JS闭包，作用域，this。 | 疯狂的码蚁 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,22 +16,34 @@
     
     
 
-    <meta name="description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。    第一个问题：什么是闭包？    我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+    <meta name="description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。
+第一个问题：什么是闭包？
+我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+
 function fn(){
-    var a = 10;">
+    var a = 10;
+    }">
 <meta property="og:type" content="article">
-<meta property="og:title" content="那些年我们走过的JS闭包，作用域，this | 疯狂的码蚁">
+<meta property="og:title" content="那些年我们走过的JS闭包，作用域，this。 | 疯狂的码蚁">
 <meta property="og:url" content="http://yoursite.com/2016/11/23/js/index.html">
 <meta property="og:site_name" content="疯狂的码蚁">
-<meta property="og:description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。    第一个问题：什么是闭包？    我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+<meta property="og:description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。
+第一个问题：什么是闭包？
+我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+
 function fn(){
-    var a = 10;">
-<meta property="og:updated_time" content="2016-11-23T12:06:11.000Z">
+    var a = 10;
+    }">
+<meta property="og:updated_time" content="2016-11-23T12:10:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="那些年我们走过的JS闭包，作用域，this | 疯狂的码蚁">
-<meta name="twitter:description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。    第一个问题：什么是闭包？    我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+<meta name="twitter:title" content="那些年我们走过的JS闭包，作用域，this。 | 疯狂的码蚁">
+<meta name="twitter:description" content="之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。
+第一个问题：什么是闭包？
+我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+
 function fn(){
-    var a = 10;">
+    var a = 10;
+    }">
     
     
     
@@ -172,7 +184,7 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">那些年我们走过的JS闭包，作用域，this</h1>
+    <h1 class="post-title">那些年我们走过的JS闭包，作用域，this。</h1>
 
     
 
@@ -193,13 +205,16 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>　　之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。<br>    第一个问题：什么是闭包？<br>    我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：</p>
-<pre><code>function fn(){
+    <p>之前有写过闭包，作用域，this方面的文章，但现在想想当时写的真是废话太多了，以至于绕来绕去的，让新手反而更难理解了，所以就有了此篇文章，也好和闭包，作用域，this告一段落。</p>
+<pre><code>第一个问题：什么是闭包？
+我不想回答这个问题，但是我可以告诉你的是闭包可以解决函数外部无法访问函数内部变量的问题。下面是一段没有使用闭包的代码：
+
+function fn(){
     var a = 10;
     }
 alert(a);
  //报错了，因为a没有定义，虽然函数fn里面定义了a但是，但是它只能在函数fn中使用。也就是作用域的问题。
-</code></pre><p>　  再看‘闭包可以解决函数外部无法访问函数内部变量的问题’这段话，好像有点意思，那么究竟闭包是怎么做的，看下面代码。</p>
+</code></pre><p>再看‘闭包可以解决函数外部无法访问函数内部变量的问题’这段话，好像有点意思，那么究竟闭包是怎么做的，看下面代码。</p>
 <pre><code>  function fn(){
   //定义了一个变量name
   var name = &apos;疯狂的码蚁&apos;;
@@ -215,7 +230,7 @@ for(var i=0;i&lt;lis.length;i++){
         alert(i);
     };
  }
-</code></pre><p>　　最终结果是不管单击哪个li元素都是弹4。不信你试试。为什么呢。看下面分析。</p>
+</code></pre><p>最终结果是不管单击哪个li元素都是弹4。不信你试试。为什么呢。看下面分析。</p>
 <pre><code>for(var i=0;i&lt;lis.length;i++){
 }
   // i = 4对吧
@@ -282,7 +297,7 @@ fn(); //6
 <p>   这里你可以看不懂了，之所以有这种感觉是因为js回收机制你不懂，强烈建议你看我之前的再次讲解js中的回收机制是怎么一回事。这篇文章。</p>
 <p>   关于闭包的知识就到这里了，如果你想看关于闭包的案例可以看这篇：从闭包案例中学习闭包的作用，会不会由你。</p>
 <p>   而外：关于在for循环中绑定事件打印变量i是最后一次。</p>
-<p>　作用域竟然上面已经讲完了～～～</p>
+<p>作用域竟然上面已经讲完了～～～</p>
 <p>   那就说一下this：</p>
 <p>　　我们经常用this，但是也许你还不清楚它是什么吧？</p>
 <pre><code>lis[i].onclick=function(){this.style.border=&quot;1px solid #ccc&quot;;} ;
@@ -311,7 +326,7 @@ alert(name);
 json.fn(); // yyy;
 fn属于json，所以this实际上就是json。
 </code></pre><p>如果你是初学者建议你暂时先记住这三点，当然this还有很多要说的，不过做为初学者你可以在项目中通过console.log来检查this是否是你预期的那样。</p>
-<p> 更多关于this的内容，可以看彻底理解js中this的指向，不必硬背。</p>
+<p>更多关于this的内容，可以看彻底理解js中this的指向，不必硬背。</p>
 <p>这篇文章并不算是一篇入门的教程，这篇文章主要是总结之前没有理解的地方，或者是以一种更加简单明了的方式写的，当然是按照我自己的理解来的，不一定你能理解，sorry，好了一切就从这里结束吧。</p>
 
   </section>
