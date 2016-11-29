@@ -4,6 +4,7 @@ window.onload = function(){
    	var marquee_width = marquee.clientWidth;
 	var cb=0;
 	var b=0;
+	var body =document.querySelector("body");
 	var marquee_ul = document.querySelector(".marquee .box ul");
 	var marquee_ul2 =  document.querySelector(".marquee .box2 ul");
 	var marquee_box = document.querySelector(".marquee .box");
@@ -16,6 +17,7 @@ window.onload = function(){
 	var marquee_ul2_li =  document.querySelectorAll(".marquee .box2 ul li a");
 	marquee_box.style.width = marquee_width*2 + "px";
 	marquee_box2.style.width = marquee_width*2 + "px";
+	liTimer1();
 function marquee_show(width){
 	var left = 0;
 	var left2 = 0;
@@ -62,8 +64,8 @@ return;
 }
 function liTimer1()	{
 	for(var i =0;  i <8; i++){
-		marquee_ul_li[i].style.color = '';
-		marquee_ul2_li[i].style.color = '';
+		marquee_ul_li[i].style.color = 'gold';
+		marquee_ul2_li[i].style.color = 'gold';
 		}
 }
 
@@ -125,9 +127,25 @@ function chuangkou(){
 marquee_show(marquee_width);	
 chuangkou();  
 changeBodyWidth();  
-//当浏览器窗口大小改变时，设置显示内容的高度  
-window.onresize=function(){  
-    changeBodyWidth();  
+//当浏览器窗口大小改变时，设置显示内容的高度 
+var container_bottom =document.querySelector(".container_bottom");
+window.onresize=function(){
+	var w = document.documentElement.clientWidth;//获取页面可见宽度
+    console.log(w); 
+    changeBodyWidth();
+    if(w<=767){
+    	marquee_box.style.width = "1292px";
+    	marquee_box2.style.width = "1292px";
+    	container_bottom.style.width="646px";
+    	container_bottom.style.marginLeft = -646/2+"px";
+	}else if(w>767||w<=997){
+		marquee_box.style.width = "1538px";
+		marquee_box2.style.width = "1538px";
+	}
+	if(w>997){
+		marquee_box.style.width = "1994px";
+		marquee_box2.style.width = "1994px";
+	}
 }  
 function changeBodyWidth(){               
     var w = document.documentElement.clientWidth;//获取页面可见宽度

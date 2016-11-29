@@ -1,16 +1,17 @@
 body{
 	background:url(../images/beijing.jpg) no-repeat center;
 	position: relative;
+
 }
 a{
 	cursor: pointer;
+	color: gold;
 }
 .biaoti{
-	min-width: 997px;
+	width: 100%;
 	text-indent: 3em;
 	font-size: 44px;
 	color: purple;
-	text-shadow: 2px 5px 5px #ffb7b4;
 }
 .container{
 	position: relative;
@@ -29,13 +30,12 @@ a{
 
 }
 table{
-	width: 997px;
+	width: 100%;
 }
 table td:hover{
 	border:10px solid pink;
 }
 a{
-	text-shadow: 1px 3px 1px gold;
 	color: white;
 	text-decoration: none;
 	font-size: 33px;
@@ -51,7 +51,6 @@ td:hover{
 }
 tr{
 	font-size: 16px;
-	text-shadow: 2px 2px 2px #b999dc;
 	color: gold;
 	text-indent: 1em;
 
@@ -61,7 +60,7 @@ tr{
 .login{
 	position: relative;
 	width: 100%;
-	height: 50px;
+	height: 20px;
 }
 .login a{
 	float: right;
@@ -71,7 +70,7 @@ tr{
 	font-size: 18px;
 }
 .marquee{
-	min-width: 997px;
+	width: 100%;
 }
 .marquee ul li{
 	width: 24.7%;
@@ -81,8 +80,8 @@ tr{
 
 }
 .marquee ul{
-            width:997px;
-            float:left;
+    width:997px;
+    float:left;
 
 }
 .yuanbao{
@@ -108,6 +107,7 @@ tr{
 	display: inline-block;
 	width: 24.7%;
 	line-height: 40px;
+	color: #f1f1f1;
 }
 .item_fixed_top0{
 	width: 40%;
@@ -119,9 +119,8 @@ tr{
 }
 /*兴趣网站*/
 .container_bottom{
-	margin-left: -498px;
 	left: 50%;
-	width: 997px;
+	min-width: 997px;
 	position: fixed;
 	bottom: 50px;
 }
@@ -148,3 +147,65 @@ tr{
 	height: 15px;
 	position: absolute;
 }
+@media (max-width: 767px){
+	.container{
+		width: 646px;
+	}
+	.biaoti{
+		font-size: 32px;
+	}
+	.marquee{
+		height: 90px;
+	}
+	.marquee ul{
+            width:646px;height: 50px;}
+   .marquee ul li{
+	width: 25%;
+	float: left;
+	}
+	.item a{
+		width: 25%;
+		float: left;
+	}
+	a{
+		font-size: 22px;
+	}
+	.container_bottom{
+		height: 180px;
+	}
+}
+@media (min-width: 768px) and (max-width: 997px) {
+	.container{
+		width: 769px;
+	}
+	.marquee{
+		height: 90px;
+	}
+	.biaoti{
+		font-size: 36px;
+	}
+	.marquee ul{
+            width:769px;height: 50px;}
+   .marquee ul li{
+	width: 25%;
+	float: left;
+	}
+	.item a{
+		width: 25%;
+		float: left;
+	}
+	a{
+		font-size: 22px;
+	}
+	.container_bottom a{
+		float: left;
+	}
+}
+@media (min-width: 998px){
+	.marquee .box,.marquee .box2{
+		width: 1994px;
+
+	}
+
+}
+

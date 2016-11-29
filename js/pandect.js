@@ -1,58 +1,15 @@
 /// 瀑布流ul系列 函数包装
-function  waterfall(type,url,parm,data,className,className2){
-	var timer = null;
-	var page = 1;
-	function appendHtml(data){
-		var arr = data;
-		var length = arr.length;
-		console.log(length);
-		var html = "";
-		html+="<ul class='waterfall'>";
-		for(var i=0;i<length;i++){
-			html+="<li><h2>"+arr[i].test+"</h2></li>";
-		}
-		html +="</ul>";
-		document.querySelector(className).innerHTML+=html;
-	}
-	function showTips(count){
-		clearTimeout(timer);
-
-		var tips = document.querySelector(className2);
-		tips.innerHTML = "为你刷新了"+count+"新闻";
-		tips.style.opacity = 1;
-		setTimeout(function(){
-			tips.style.opacity = 0;
-		},2000);
-		
-	}
-	AJax(type,url+page,parm,function(data){
-		var date = JSON.parse(data);
-		showTips(date.length);
-		appendHtml(date);
-		console.log(date.length);
-	});	
-}
+function  waterfall(type,url,parm,data,className,className2){var timer = null;var page = 1;
+	function appendHtml(data){var arr = data;var length = arr.length;console.log(length);var html = "";html+="<ul class='waterfall'>";for(var i=0;i<length;i++){html+="<li><h2>"+arr[i].test+"</h2></li>";}html +="</ul>";document.querySelector(className).innerHTML+=html;}
+	function showTips(count){clearTimeout(timer);var tips = document.querySelector(className2);
+		tips.innerHTML = "为你刷新了"+count+"新闻";tips.style.opacity = 1;
+		setTimeout(function(){tips.style.opacity = 0;},2000);}
+	AJax(type,url+page,parm,function(data){var date = JSON.parse(data);
+		showTips(date.length);appendHtml(date);console.log(date.length);});	}
 //滚动条  函数包装
-function scrollBar(type,url,parm){
-	var page = 1;
-	window.onscroll = function(){
-		page++;	
-		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		var iHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
-		var windowHeight = window.innerHeight;
-		console.log(scrollTop,iHeight,windowHeight);
-		if(scrollTop>=iHeight - windowHeight){
-			AJax(type,url+page,parm,function(data){
-				var date = JSON.parse(data);
-				showTips(date.length);
-				appendHtml(date);
-				console.log(page);
-
-			});
-			console.log(page);
-		}
-	}
-}
+function scrollBar(type,url,parm){var page = 1;window.onscroll = function(){page++;	
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;var iHeight = document.body.scrollHeight || document.documentElement.scrollHeight;var windowHeight = window.innerHeight;
+		if(scrollTop>=iHeight - windowHeight){AJax(type,url+page,parm,function(data){var date = JSON.parse(data);showTips(date.length);appendHtml(date);console.log(page);});}}}
 // 
 //AJax 函数包装
 function AJax(type,url,parm,callback){
