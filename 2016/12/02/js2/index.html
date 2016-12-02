@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      js原生放大镜和canvas放大镜基本函数包装 | 疯狂的码蚁 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="厉害了">
+    
+    
+    <link rel="prefetch" href="https://xiaojunmr.github.io/parent_page">
+    <meta name="description" content="// 放大镜 函数包装
+function magnfier(){
+    // // 放大镜 等待窗口完全加载完毕    
+    var show_small = document.querySelector(&amp;quot;.show_small&amp;quot;);
+    var pointer = document.querySelector(&amp;quot;.pointer&amp;quot;);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js原生放大镜和canvas放大镜基本函数包装 | 疯狂的码蚁">
+<meta property="og:url" content="http://yoursite.com/2016/12/02/js2/index.html">
+<meta property="og:site_name" content="疯狂的码蚁">
+<meta property="og:description" content="// 放大镜 函数包装
+function magnfier(){
+    // // 放大镜 等待窗口完全加载完毕    
+    var show_small = document.querySelector(&amp;quot;.show_small&amp;quot;);
+    var pointer = document.querySelector(&amp;quot;.pointer&amp;quot;);">
+<meta property="og:updated_time" content="2016-12-02T07:19:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js原生放大镜和canvas放大镜基本函数包装 | 疯狂的码蚁">
+<meta name="twitter:description" content="// 放大镜 函数包装
+function magnfier(){
+    // // 放大镜 等待窗口完全加载完毕    
+    var show_small = document.querySelector(&amp;quot;.show_small&amp;quot;);
+    var pointer = document.querySelector(&amp;quot;.pointer&amp;quot;);">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+    
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">疯狂的码蚁</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          人生是 梦的延长
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">档案</a></li>
+              
+                
+                <li class="navigation__item"><a href="/javascript" title="" class="">友情链接</a></li>
+              
+                
+                <li class="navigation__item"><a href="/github" title="" class="">github</a></li>
+              
+                
+                <li class="navigation__item"><a href="/parent_page" title="" class="">个人空间</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">js原生放大镜和canvas放大镜基本函数包装</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-12-02" class="post-meta__date date">2016-12-02</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>// 放大镜 函数包装</p>
+<pre><code>function magnfier(){
+    // // 放大镜 等待窗口完全加载完毕    
+    var show_small = document.querySelector(&quot;.show_small&quot;);
+    var pointer = document.querySelector(&quot;.pointer&quot;);
+    var hide = document.querySelector(&quot;.hide&quot;);
+    var hideImg = document.querySelector(&quot;.hide img&quot;);
+    show_small.onmouseover = function(){
+        pointer.style.display = &quot;block&quot;;
+        hide.style.display = &quot;block&quot;;
+    }
+    show_small.onmouseout = function(){
+        pointer.style.display = &quot;none&quot;;
+        hide.style.display = &quot;none&quot;;
+    }
+    show_small.onmousemove = function(event){
+        var oEvent = event || window.event;
+</code></pre><p>// 展示图与放大图的倍数  等于  指针范围与展示图的倍数</p>
+<pre><code>var x = oEvent.clientX;
+var y = oEvent.clientY;
+var l = x - pointer.offsetWidth/2;
+var t = y - pointer.offsetHeight/2;
+</code></pre><p>// 鼠标位置小于指针范围宽度一半时，指针范围水平方向的位置等于O</p>
+<pre><code>if(x &lt;= pointer.offsetWidth/2){
+    l = 0;
+    // 鼠标位置大于（展示图宽度减去指针范围的宽度）的一半时，
+    // 指针范围水平方向的位置等于（展示图宽度减去指针范围的宽度）
+}else if(x &gt;= show_small.offsetWidth - pointer.offsetWidth/2){
+    l = show_small.offsetWidth - pointer.offsetWidth;
+}
+//鼠标位置小于指针范围宽度一半时，指针范围竖直方向的位置等于O
+if(y &lt;= pointer.offsetHeight/2){
+    t = 0;
+// 鼠标位置大于（展示图高度减去指针范围的高度）的一半时，
+// 指针范围竖直方向的位置等于（展示图高度减去指针范围的高度）  
+}else if(y &gt;= show_small.offsetHeight - pointer.offsetHeight/2){
+    t = show_small.offsetHeight - pointer.offsetHeight;
+}
+// 指针范围所在的位置
+pointer.style.left = l + &quot;px&quot;;
+pointer.style.top = t + &quot;px&quot;;
+
+
+var xishuX = l/(show_small.offsetWidth - pointer.offsetWidth);
+var xishuY = t/(show_small.offsetHeight - pointer.offsetHeight);
+</code></pre><p>// 显示位置系数</p>
+<pre><code>// pointer.innerText = &quot;x:&quot;+ xishuX + &quot;;y:&quot;+xishuY;
+</code></pre><p>// 放大图片所显示的位置</p>
+<pre><code>    hideImg.style.left = -xishuX*(hideImg.offsetWidth - hide.offsetWidth) + &quot;px&quot;;
+    hideImg.style.top = -xishuY*(hideImg.offsetHeight - hide.offsetHeight) + &quot;px&quot;;
+}
+</code></pre><p>}</p>
+<p>//canvas放大镜</p>
+<pre><code>function canvasDa(cavsWidth,cavsHeight,dataImg){
+    var canvas =document.querySelector(&quot;#canvasDa&quot;);
+    var cxt =canvas.getContext(&quot;2d&quot;);
+
+    var offCanvas = document.querySelector(&quot;#offCanvas&quot;);
+    var offCtx = offCanvas.getContext(&quot;2d&quot;);
+    //放大倍数
+    var scaleX;
+    var scaleY;
+
+    var image =new  Image();
+    var isMouseDown = false;
+
+    window.onload =function(){
+        canvas.width =cavsWidth;
+        canvas.height= cavsHeight;
+
+        image.src=dataImg;
+        image.onload =function(){
+            //放大系数获取 --根据原图与显示图相差的宽高倍数
+            offCanvas.width =image.width;
+            offCanvas.height = image.height;
+            scaleX=offCanvas.width/canvas.width;
+            scaleY= offCanvas.height/canvas.height
+            console.log(scaleX,scaleY);
+            cxt.drawImage(image,0,0,canvas.width,canvas.height);
+            offCtx.drawImage(image,0,0)
+        }
+    }
+    console.log(canvas.getBoundingClientRect());
+    //鼠标在原图坐标的获取
+    function windowToCanvas(x,y){
+        var  bbox = canvas.getBoundingClientRect();
+        return{x: x-bbox.left,y:y-bbox.top}
+        console.log(canvas.getBoundingClientRect())
+    }
+    //事件获取
+    canvas.onmousedown =function(e){
+        e.preventDefault()
+        var point =windowToCanvas(e.clientX,e.clientY);
+        isMouseDown = true;
+        drawCanvasWidthMagnifter(true,point)
+    }
+    canvas.onmousemove = function(e){
+        e.preventDefault()
+        if(isMouseDown == true){
+            var point =windowToCanvas(e.clientX,e.clientY);
+            drawCanvasWidthMagnifter(true,point);
+        }
+
+    }
+    canvas.onmouseup = function(e){
+        e.preventDefault()
+        isMouseDown =false;
+        drawCanvasWidthMagnifter(false)
+    }
+    canvas.onmouseout = function(e){
+        e.preventDefault()
+        isMouseDown =false;
+        drawCanvasWidthMagnifter(false)
+    }
+    //清除画布上次函数残留
+    function drawCanvasWidthMagnifter(isShowMagnifier,point){
+        cxt.clearRect(0,0,canvas.width,canvas.height);
+        cxt.drawImage(image,0,0,canvas.width,canvas.height);
+        if(isShowMagnifier ==true){
+            darwMaginfier(point);
+        }
+    }
+    //鼠标当前坐标和放大镜放置的位置及样式设置
+    function darwMaginfier(point){
+        var imageLG_cx = point.x * scaleX;
+        var imageLG_cy = point.y * scaleY;
+
+        var mr = 100;
+
+        var sx = imageLG_cx-mr/2;
+        var sy = imageLG_cy-mr/2;
+
+        var dx = point.x-mr/2;
+        var dy = point.y-mr/2;
+        cxt.save();
+        console.log(point.x);
+        cxt.lineWidth=5.0;
+        cxt.strokeStyle =&quot;#069&quot;
+        cxt.beginPath();
+        //覆盖drawImage，成圆形样式
+        cxt.arc(point.x,point.y,mr/2,0,Math.PI*2);
+        cxt.stroke();
+        cxt.clip();
+        cxt.drawImage(offCanvas,sx,sy,mr,mr,dx,dy,mr,mr);
+        console.log(2*mr);
+        cxt.restore();
+    }
+}
+</code></pre>
+  </section>
+
+  
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016-2017 | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a>欢迎关注个人微博<a href ="http://weibo.com/u/6047911635">你爱的睡宝宝</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
