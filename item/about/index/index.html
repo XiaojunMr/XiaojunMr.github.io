@@ -149,7 +149,14 @@ h1 {
   text-align: center;
   opacity: 0;
 }
-@media screen and (min-width: 860px) {
+
+.about_index{background:rgba(87,8,22,0.8)}
+    .about{background:rgba(127,125,222,0.6);width: 100%;height: 60px;position: fixed;top: 0;min-width: 684px;}
+    .about ul{width: 684px;height: 60px;margin: 0 auto;}
+    .about li{float: left;line-height: 60px;text-align: center;width: 25%;}
+    .footer{margin-top:50px;width: 100%;position: fixed;bottom: 20px;text-align: center;font-size: 16px;}
+    .expertise li{display: inline-block;position:relative; bottom: -55px;margin-left:35px;}
+@media screen and (min-width: 920px) {
   .sky-container {
     top: 18%;
   }
@@ -165,11 +172,14 @@ h1 {
   line-height: 36px;
   margin: 0;
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 920px) {
   .sky-container__left h2, .sky-container__right h2 {
     font-size: 42px;
     line-height: 68px;
   }
+  .about{background:rgba(127,125,222,0.6);width: 100%;height: 60px;position: fixed;top: 0;min-width: 997px;}
+  .about ul{ width: 997px; }
+  .about ul li{font-size: 18px;}
 }
 .sky-container__left {
   margin-right: 5px;
@@ -238,12 +248,7 @@ h1 {
   color: #E62117;
 }
  body{background:rgba(9,9,9,0.8);}
-  .about_index{background:rgba(87,8,22,0.8)}
-    .about{background:rgba(127,125,222,0.6);width: 100%;height: 60px;position: fixed;top: 0;min-width: 997px;}
-    .about ul{width: 997px;height: 60px;margin: 0 auto;}
-    .about li{float: left;line-height: 60px;text-align: center;width: 20%;}
-    .footer{margin-top:50px;width: 100%;position: fixed;bottom: 20px;text-align: center;}
-    .expertise li{display: inline-block;position:relative; bottom: -55px;margin-left:35px;}
+
     </style>
 
   <script src="js/prefixfree.min.js"></script>
@@ -331,6 +336,27 @@ h1 {
   </div>
   </div>
   <div class="footer"><span>版权所有©️此模板来自github<a href="https://xiaojunmr.github.io/">首页</a><span>\ /</span><a href="https://xiaojunmr.github.io/archive.html">档案</a></span><br/><span>/个人邮箱：1134102923@qq.com/</span></div>
+  <audio id="aud" src="bgm/张国荣-倩女幽魂 (国语).mp3" preload >    
+  </audio>
+  <img src="images/play.jpg" id="playpause" style="position:fixed;bottom: 20px;right: 20px;width: 50px;height:50px; border-radius: 50%;cursor: pointer;" />
+
+<script type="text/javascript">
+var aud = document.getElementById("aud");
+var img = document.getElementById("playpause");
+img.onclick = function() {
+    if (aud.paused) {
+        aud.play();
+    } else {
+        aud.pause();
+    }
+}
+aud.addEventListener("play", function (e) {
+    img.src="images/pause.jpg";
+}, false);
+aud.addEventListener("pause", function (e) {
+    img.src="images/play.jpg";
+}, false);
+</script>
       
 
   <script src='js/jquery.min.js'></script>
