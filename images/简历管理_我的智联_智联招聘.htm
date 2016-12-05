@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1 -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>简历管理_我的智联_智联招聘</title>
+    
+    <link href="./简历管理_我的智联_智联招聘_files/jquery.zlzp.popupdiv.css" type="text/css" rel="stylesheet">
+    <link href="./简历管理_我的智联_智联招聘_files/layer.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./简历管理_我的智联_智联招聘_files/dc.js"></script><script type="text/javascript" async="" src="./简历管理_我的智联_智联招聘_files/dywe.js"></script><script src="./简历管理_我的智联_智联招聘_files/hm.js"></script><script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/basedata.js"></script>
+    <link type="text/css" rel="stylesheet" href="./简历管理_我的智联_智联招聘_files/resumeHeadFooter.css">
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery-1.6.4.min.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="./简历管理_我的智联_智联招聘_files/myzhaopin.css">
+    <link type="text/css" rel="stylesheet" href="./简历管理_我的智联_智联招聘_files/subnav_resumes.css">
+    <link href="./简历管理_我的智联_智联招聘_files/common.css" type="text/css" rel="stylesheet">
+    <script language="javascript" type="text/javascript" src="./简历管理_我的智联_智联招聘_files/function.js"></script>
+    <script language="javascript" type="text/javascript" src="./简历管理_我的智联_智联招聘_files/utilscript.js"></script>
+    <script language="javascript" type="text/javascript" src="./简历管理_我的智联_智联招聘_files/myresume_popupdiv.js"></script>
+    <script language="javascript" type="text/javascript" src="./简历管理_我的智联_智联招聘_files/formvalidator.js"></script>
+    <script language="javascript" type="text/javascript" src="./简历管理_我的智联_智联招聘_files/ajaxbase.js"></script>
+    <script language="javascript" type="text/javascript">
+<!--
+    var helpURL = 'http://interface.zhaopin.com/help/help.asp?MID=22500';
+    var custom_commenttitle = new formEle(true, 'text3', 'title', ['请填写自定义标题', '您输入的文字超过20个汉字或40个英文字符和标点符号'], null, { length: 40, condition: 'document.frmMain.CommentTitle.value==1' });
+    var CommentContent = new formEle(true, 'text', 'CommentContent', ['请填写自我评价', '自我评价内容过长'], null, { length: 500 });
+
+    function saveResume() {
+        delInvisiChar(document.frmMain.CommentContent);
+        if (!document.frmMain.checkForm()) return;
+
+        document.frmMain.submit();
+    }
+
+    function commentTitle(s) {
+        var t = document.frmMain.custom_commenttitle;
+        if (s && t) if (s.value == '1') { t.style.display = ''; }
+        else { t.style.display = 'none'; }
+        //t.value='';
+    }
+
+    String.prototype.Trimall = function () { return this.replace(/\s/g, ""); }
+    function calWordNumRemained(max, o, show1, show2, inputname) {
+        if (o) {
+            show1.style.display = "inline";
+            var minlen = o.value.Trimall().length;
+            var l = o.value.length;
+            var r = parseInt(max - l);
+
+            if (show1 && show2) {
+                show1.innerHTML = '已输入' + l + '个字';
+                show1.className = 'org12';
+                show2.innerHTML = "，最多可输入" + max + "个字";
+                document.getElementById(inputname + "Img").style.display = "inline";
+                document.getElementById(inputname + "Img").style.marginLeft = "6px";
+                document.getElementById(inputname + "Div").innerHTML = '总共输入了' + l + '个字（其中可见字数为' + minlen + "个，不可见字数为" + (l - minlen) + "个）"
+
+            }
+        }
+    }
+    function iniWordNum(show1, show2, txt, inputname) {
+        if (show1 && show2) {
+            show1.style.display = "none";
+            document.getElementById(inputname + "Img").style.display = "none";
+            show2.innerHTML = txt;
+        }
+    }
+    function ajaxReturn(success, responseText) {
+        if (success) {
+            if (responseText != '') {
+                var expi = new Date(new Date().getTime() + (1000 * 365 * 24 * 60 * 60));
+                document.cookie = 'bbll=' + escape(responseText) + '; expires=' + expi.toGMTString() + '; path=/' + '; domain=zhaopin.com';
+            }
+        }
+        else {// something went wrong with the AJAX callback
+        }
+    }
+
+
+    //-->
+    </script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/analytics.js"></script>
+
+<link rel="stylesheet" href="./简历管理_我的智联_智联招聘_files/layer(1).css" id="layui_layer_skinlayercss"></head>
+<body>
+
+<link type="text/css" rel="stylesheet" href="./简历管理_我的智联_智联招聘_files/resumeHeadFooter(1).css">
+<div class="top">
+    <div class="top_con clearfix">
+        <p style="float: left; font-size: 14px; color: #90a4b7; height: 38px; line-height: 40px;display:none;"><span style="font-weight: bold">公告：</span>为了提供更好的服务，智联招聘将于12月1日22:00-12月1日24:00进行系统优化升级，届时购买简历置顶功能可能会受到影响，请见谅。</p>
+
+        <ul class="fr">
+            <li class="people">
+                <i onmousedown="dyweTrackEvent(&#39;luMYinfo&#39;,&#39;UserCenterLst&#39;)" class="icon icon_people"></i>
+                <i class="icon icon_triangle"></i>
+
+                <ul class="acc_hover">
+                    <span class="icon top_sj icon_sqt" style=""></span>
+                    <li><a href="http://i.zhaopin.com/resume/userinfo/add?type=0" target="_blank">修改个人信息</a></li>
+                    <li><a href="http://i.zhaopin.com/ResumeCenter/AccountSet/Index" target="_blank">账号设置</a></li>
+                    <li><a href="http://i.zhaopin.com/ResumeCenter/MyCollect/Index">我的收藏</a></li>
+                    <li><a href="http://i.zhaopin.com/PositionSearcher/Searcher/JobSearch">我的订阅</a></li>
+
+                    <li><a onclick="dyweTrackEvent(&#39;luMYinfo&#39;,&#39;clickInvite&#39;)" href="http://i.zhaopin.com/PositionInvited/jobInvited/Index">职位邀请</a></li>
+                    <li><a href="http://article.zhaopin.com/payquery/index.do">薪酬查询</a></li>
+                    <li><a href="http://i.zhaopin.com/Order/OrderManager/MyOrder?waitPay=false&amp;pageNo=1&amp;pageSize=10" onclick="dyweTrackEvent(&#39;luStickGoodsSelect&#39;,&#39;clickMyorder&#39;)">我的订单</a></li>
+                    <li><a onclick="dyweTrackEvent(&#39;luStickGoodsSelect&#39;,&#39;clickMyStat&#39;)" href="http://i.zhaopin.com/Order/OrderManager/GetJobSeekerStatistics?serviceId=&amp;resumeNumber=&amp;version=">求职统计</a></li>
+                    <li><a href="http://passport.zhaopin.com/account/logout">退出</a></li>
+                </ul>
+            </li>
+            <li>
+                <a onclick="recordOutboundLink(this,&#39;addnewlink&#39;,&#39;mobilejob&#39;)" href="http://images.zhaopin.com/2012/other/mobile/mobile.html" target="_blank">
+                    <i class="icon icon_phone"></i>
+                    <span>手机求职</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- top结束 -->
+
+
+<div class="acc_nav clearfix">
+    <div class="nav_con clearfix">
+        <div class="nav_img fl">
+            <img src="./简历管理_我的智联_智联招聘_files/img.png">
+        </div>
+        <ul class="nav_link fl">
+            <li><a href="http://www.zhaopin.com/">首&nbsp;&nbsp;页</a></li>
+            <li><a href="http://i.zhaopin.com/" class="cur current">我的智联</a></li>
+            <li><a href="http://sou.zhaopin.com/">职位搜索</a></li>
+            <li><a href="http://student.zhaopin.com/">校园招聘</a></li>
+            <li><a href="http://www.highpin.cn/zhiwei/?fromType=12&amp;utm_source=zpsygdad&amp;utm_medium=cpc&amp;utm_content=zpsygdadtextlink&amp;utm_campaign=zpsygdadanalytics&amp;utm_term=onlinepromo_201402&amp;cku=347320664E73516A4F655A614A64527341675D775C6850735F663F73296A4A6559614664517341675A775068597350664173576A43655361266428734E6751772B682F7359664873256A33655561486424733D6757775E68357329664E735C6A326525614E6457734267597751685073546641735E6A45655B61336417730267447706680E7309664873346A2365556142645D7332673E775868507356665E73526A5765596146645C7341675A775E68257320664E735C6A336526614E645D733F67277758685A73276637735A6A4C6529613F645B734367517730682073596639732A6A4F655A614A64527341675D775C68507357664873246A3665556148642273326757775E68257327664E735C6A246521614E6457734867237735685C735F662673336A4A65596148641">高端招聘</a></li>
+            <li><a onclick="recordOutboundLink(this,&#39;addnewlink&#39;,&#39;educchannal&#39;)" href="http://edu.zhaopin.com/">智联教育</a></li>
+            <li><a href="http://www.zhaopin.com/jobseeker/index_industry.html">行业求职</a></li>
+            <li><a href="http://article.zhaopin.com/">求职指导</a></li>
+            <li><a href="http://ceping.zhaopin.com/">智联测评</a></li>
+        </ul>
+    </div>
+
+</div>
+<!-- nav结束 -->
+    <!--修改注册邮箱-->
+
+    <div id="newwid2" class="newwidstyle">
+        <form name="regform" id="regform" method="post" action="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1#">
+            <h2>修改邮箱<span class="newwidclose close"></span></h2>
+            <input type="hidden" id="emailOld" value="1134102923@qq.com">
+            <input type="hidden" id="loginNameOld" value="1134102923@qq.com">
+            <div class="powerinfo2">
+                <table>
+                    <tbody><tr>
+                        <th>当前邮箱
+                        </th>
+                        <td id="oldemail">
+                            1134102923@qq.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <th valign="top">新邮箱地址
+                        </th>
+                        <td valign="top">
+                            <div class="emailaddrr">
+                                <input type="text" class="" name="email" id="email"><input type="hidden" name="istest" id="istest" value="0">
+                            </div>
+                            <span id="email_info"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td class="msgtxt_email">邮箱用于登录、找回密码、接收HR来信。修改成功后，请使用新邮箱登录智联。
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="button" class="nextstepbtn" id="nextstepbtn"><input type="button" class="cancelbtn close">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </form>
+    </div>
+    <div id="mainContainer">
+        <div class="layout">
+<div class="left">
+    <div class="leftRow">
+        <h2><span>我的简历</span></h2>
+        <div class="leftRowCon">
+            <ul class="leftRowA">
+                
+                <li>WEB前端开发 0年 上海 </li>
+                <li><a href="http://my.zhaopin.com/myzhaopin/editName.asp?ext_id=JM829427913R90250000000&amp;Language_ID=1&amp;Resume_ID=252335615&amp;Version_Number=1" title="修改简历名称">修改名称</a>&nbsp;<a href="http://my.zhaopin.com/myzhaopin/resume_publish.asp?ext_id=JM829427913R90250000000&amp;Language_ID=1&amp;Resume_ID=252335615&amp;Version_Number=1" title="刷新您的简历，使简历排序靠前并更容易的被企业浏览到！">刷新</a>&nbsp;<a href="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1#" onclick="openPopup(&#39;/Home/ResumePreview?resumeNumber=JM829427913R90250000000&amp;resumeId=252335615&amp;version=1&amp;language=1&#39;,&#39;preview&#39;,700,800);return false;" title="预览简历">预览</a></li>
+            </ul>
+        </div>
+        <div class="row1Bot">
+            <img src="./简历管理_我的智联_智联招聘_files/row1BL.gif" width="4" height="4" alt=""><img src="./简历管理_我的智联_智联招聘_files/row1BR.gif" width="4" height="4" alt="" style="float: right">
+        </div>
+    </div>
+        <div class="leftRow">
+            <h2><span>简历内容</span></h2>
+            <div class="leftRowCon">
+                <ul class="leftRowB">
+                        <li class="ok"><a href="http://i.zhaopin.com/Resume/baseinfo/edit//252335615/JM829427913R90250000000/1/1">个人信息</a></li>
+                        <li class="ok"><a href="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1">自我评价</a></li>
+                        <li class="ok"><a href="http://i.zhaopin.com/Resume/DesiredPosition/edit/252335615/JM829427913R90250000000/1/1">求职意向</a></li>
+                        <li class="ok"><a href="http://my.zhaopin.com/MYZHAOPIN/resume_experience_edit.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">工作经验</a></li>
+                        <li class="ok"><a href="http://i.zhaopin.com/Resume/Education/edit/252335615/JM829427913R90250000000/1/1">教育背景</a></li>
+                        <li class="blank"><a href="http://my.zhaopin.com/MYZHAOPIN/resume_training_edit.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">培训经历</a></li>
+                        <li class="blank"><a href="http://my.zhaopin.com/MYZHAOPIN/EditLagu.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">语言能力</a></li>
+                        <li class="ok"><a href="http://my.zhaopin.com/MYZHAOPIN/editcert.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">证书</a></li>
+                        <li class="ok"><a href="http://my.zhaopin.com/MYZHAOPIN/editatta_edit.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">照片/附件</a></li>
+                        <li class="ok"><a href="http://my.zhaopin.com/MYZHAOPIN/resume_others_edit.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">其他信息</a></li>
+                </ul>
+            </div>
+            <div class="row1Bot">
+                <img src="./简历管理_我的智联_智联招聘_files/row1BL.gif" width="4" height="4" alt=""><img src="./简历管理_我的智联_智联招聘_files/row1BR.gif" width="4" height="4" alt="" style="float: right">
+            </div>
+        </div>
+        <div class="leftRow">
+            <h2><span>人才附加内容</span></h2>
+            <div class="leftRowCon">
+                <ul class="leftRowB">
+                        <li class="blank"><a href="http://my.zhaopin.com/MYZHAOPIN/editproj.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">项目经验</a></li>
+                        <li class="ok"><a href="http://my.zhaopin.com/MYZHAOPIN/editskil.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">专业技能</a></li>
+                        <li class="optional"><a href="http://my.zhaopin.com/MYZHAOPIN/editscho.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">在校学习情况</a></li>
+                        <li class="optional"><a href="http://my.zhaopin.com/MYZHAOPIN/editprac.asp?Resume_ID=252335615&amp;Ext_ID=JM829427913R90250000000&amp;Version_Number=1&amp;Language_ID=1">在校实践经验</a></li>
+                </ul>
+            </div>
+            <div class="row1Bot">
+                <img src="./简历管理_我的智联_智联招聘_files/row1BL.gif" width="4" height="4" alt=""><img src="./简历管理_我的智联_智联招聘_files/row1BR.gif" width="4" height="4" alt="" style="float: right">
+            </div>
+        </div>
+    <input type="hidden" id="resumeCompletionScore" value="92">
+
+    <!-- 图例说明 -->
+    <div class="leftRow">
+            <h2><span>图例说明</span></h2>
+            <div class="leftRowCon">
+                <ul class="leftRowC">
+                    <li class="ok">已填写</li>
+                    <li class="error">不完整</li>
+                    <li class="blank">未填写</li>
+                    <li class="optional">选填项</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        <div class="row1Bot">
+            <img src="./简历管理_我的智联_智联招聘_files/row1BL.gif" width="4" height="4" alt=""><img src="./简历管理_我的智联_智联招聘_files/row1BR.gif" width="4" height="4" alt="" style="float: right">
+        </div>
+    </div>
+    <!-- end 图例说明 -->
+</div>
+            <div class="right">
+                <div id="resumeInfo">
+                    <h2>
+
+                        
+                            <span id="integrated">当前简历完整度：<font class="org12">★</font><font class="org12">★</font><font class="org12">★</font><font class="org12">★</font><font class="grey12">★</font></span>
+                        自我评价
+                        
+                    </h2>
+                        <div class="rightRow1">
+                            修改自我评价（<span class="org14">*</span>为必填项）
+                        </div>
+                    
+<div class="rightRow1">
+    智联建议您对自己做一个简短评价，简明扼要地描述您的职业优势，让用人单位快速地了解您！<br>
+    优秀的自我评价可以吸引招聘人员的眼球，为您的简历增色不少！（<span class="org14">*</span>为必填项）
+</div>
+<form name="frmMain" action="http://i.zhaopin.com/Resume/SelfEvaluete/Save" method="post">
+    <input type="hidden" name="SubRowId" value="1">
+    <input type="hidden" name="version_number" value="1">
+    <input type="hidden" name="ext_id" value="JM829427913R90250000000">
+    <input type="hidden" name="resume_id" value="252335615">
+    <input type="hidden" name="Language_id" value="1">
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="table5">
+        <colgroup>
+            <col width="1">
+            <col width="110">
+            <col>
+        </colgroup>
+        <tbody><tr>
+            <td><font class="org14">*</font></td>
+            <td>标题：</td>
+            <td>
+                <select name="CommentTitle" onchange="commentTitle(this)" style="margin-right: 8px;">
+                        <option value="自我评价" selected="selected">自我评价</option>
+                        <option value="职业目标">职业目标</option>
+                        <option value="1">自定义标题</option>
+
+
+                </select>
+
+                <input type="text" name="custom_commenttitle" value="" size="73" style="display:none;" maxlength="100" id="custom_commenttitle" mzpmodule="resumeChEnFac" tiptext="Self-assessment" lang="en"></td>
+        </tr>
+        <tr id="conError_title" style="display: none;">
+            <td></td>
+            <td></td>
+            <td id="txtError_title" class="org12 formError"></td>
+        </tr>
+        <tr>
+            <td valign="top"><font class="org14">*</font></td>
+            <td valign="top">内容：</td>
+            <td>
+                <textarea name="CommentContent" id="CommentContent" rows="12" cols="95" onblur="iniWordNum(document.getElementById(&#39;maxWord1&#39;),document.getElementById(&#39;maxWord2&#39;),&#39;限500字以内&#39;,&#39;eg3&#39;)" onfocus="calWordNumRemained(500,this,document.getElementById(&#39;maxWord1&#39;),document.getElementById(&#39;maxWord2&#39;),&#39;eg3&#39;)" onkeyup="calWordNumRemained(500,this,document.getElementById(&#39;maxWord1&#39;),document.getElementById(&#39;maxWord2&#39;),&#39;eg3&#39;)" mzpmodule="resumeChEnFac" tiptext="I am easy-going and optimistic, optimistic, cheerful, serious and responsible work, good at practice in the accumulation of learning, and constantly improve themselves. Through the experience of the student union, exercise a good communication and cooperation ability. At the same time, a wealth of experience to make themselves have a strong professional ability and sense of responsibility." lang="en" class=" classFormEle_ok">  本人性格随和乐观，乐观开朗，工作认真负责，善于在实践中积累学习，不断的完善自我。通过在学生会的经历，锻炼出了良好的沟通协作能力。同时，丰富的实习经历使自己拥有较强的职业能力和责任心。</textarea></td>         
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><span class="grey12">填写文字在100个字以上评定等级，少于不计算，内容越详细，等级越高<br>
+                范例一：<a href="javascript:void(0);" onmouseover="stopTimeG();showPopup(&#39;eg1&#39;,event,getXY(document.getElementById(&#39;eg1Img&#39;)).x+12,getXY(document.getElementById(&#39;eg1Img&#39;)).y+10);" onmouseout="startTimeG();" onclick="return false;"><img src="./简历管理_我的智联_智联招聘_files/iconquestion2.gif" border="0" align="absmiddle" id="eg1Img"></a>&nbsp;&nbsp;范例二：<a href="javascript:void(0);" onmouseover="stopTimeG();showPopup(&#39;eg2&#39;,event,getXY(document.getElementById(&#39;eg2Img&#39;)).x+12,getXY(document.getElementById(&#39;eg2Img&#39;)).y+10);" onmouseout="startTimeG();" onclick="return false;"><img src="./简历管理_我的智联_智联招聘_files/iconquestion2.gif" border="0" align="absmiddle" id="eg2Img"></a> &nbsp;&nbsp;&nbsp;（<span id="maxWord1" style="display: inline;" class="org12">已输入323个字</span><span id="maxWord2">，最多可输入500个字</span><a onmouseover="stopTimeG();showPopup(&#39;eg3&#39;,event,getXY(document.getElementById(&#39;eg3Img&#39;)).x+12,getXY(document.getElementById(&#39;eg3Img&#39;)).y+10)" onclick="return false;" onmouseout="startTimeG();" href="javascript:void(0);"><img id="eg3Img" src="./简历管理_我的智联_智联招聘_files/iconquestion2.gif" align="absMiddle" border="0" style="display: inline; margin-left: 6px;"></a>）</span></td>
+        </tr>
+        <tr id="conError_CommentContent" style="display: none;">
+            <td></td>
+            <td></td>
+            <td id="txtError_CommentContent" class="org12 formError"></td>
+        </tr>
+    </tbody></table>
+    <div class="btnCon">
+        <input type="button" class="btn7" value="保存" onclick="saveResume();">
+        &nbsp;&nbsp;
+        <a href="http://i.zhaopin.com/resume/editpreview/index?ext_id=JM829427913R90250000000&amp;resume_id=252335615&amp;Version_Number=1&amp;language_id=1">返回</a>
+    </div>
+</form>
+
+<script language="javascript" type="text/javascript">
+    iniCheckForm('frmMain');
+
+    function fnBlurCustomcommen() {
+        if (custom_commenttitle.s != null && custom_commenttitle.s >= 0) custom_commenttitle.fnValidate();
+    }
+    myAttachEvent(document.frmMain.CommentTitle, 'change', fnBlurCustomcommen);
+
+</script>
+<div id="helpTxt" class="row3b">
+    <h3><span>自我评价撰写技巧</span></h3>
+    <ul class="row3bCon">
+        <li>社会简历</li>
+    </ul>
+    <ul class="decimal" style="border: none;">
+        <li>详细罗列出您所拥有的特长、技能和经验，以及您在以前的工作中累积了的优势。您可以根据招聘方的招聘信息，有针对性地罗列，让人事经理更好地了解到您与所申请职位的符合程度。</li>
+        <li>用尽可能简要且平实的语句概括描述出您的特长、技能、经验及优势。语言不可过于口语化，内容须实事求是，不可夸张。</li>
+        <li>避免提到您的业余爱好、抱负、对公司的感想等；避免空泛、感性、老套的话。</li>
+    </ul>
+
+    <ul class="row3bCon">
+        <li>学生简历</li>
+    </ul>
+    <ul class="decimal" style="border: none;">
+        <li>详细罗列出您所拥有的专长、技能和实践经验，以及您在校期间经过锻炼培养出来的能力。您可以根据招聘方的招聘信息，有针对性地罗列，让人事经理更好地了解到您与所申请职位的符合程度。</li>
+        <li>用尽可能简要且平实的语句概括描述出您的专长、技能、实践经验及能力。语言不可过于口语化，内容须事实求是，不可夸张。</li>
+        <li>避免提到您的业余爱好、抱负、对公司的感想等；避免空泛、感性、老套的话。</li>
+    </ul>
+</div>
+<!-- popupDiv eg -->
+<div id="eg1" class="popupDiv" style="width: 250px; visibility: hidden; position: absolute; top: -100px; left: -100px;" onclick="event.cancelBubble=true;">
+    <div class="topLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topCenterWhite" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="content">
+        <div style="padding: 0 10px 5px 10px; line-height: 150%;">
+            <div><b>社会简历</b></div>
+            <div>资深市场销售人员，六年销售和市场领域从业经验，年销售额过一千万；长期接触国外客户，英语能力强；对市场营销、 渠道开发及经销商管理有丰富的经验</div>
+            <br>
+            <div><b>学生简历</b></div>
+            <div>两年学生会主席生涯，培养了较强的组织能力和领导能力。曾在课余时间，参与过网站开发项目，能够较熟练地使用Photoshop，同时积累了一定的团队合作经验。</div>
+        </div>
+    </div>
+    <div class="bottomLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomCenter" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+</div>
+<div id="eg2" class="popupDiv" style="width: 250px; visibility: hidden; position: absolute; top: -100px; left: -100px;" onclick="event.cancelBubble=true;">
+    <div class="topLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topCenterWhite" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="content">
+        <div style="padding: 0 10px 5px 10px; line-height: 150%;">
+            <div><b>社会简历</b></div>
+            <div>3年数据库管理员经验，熟悉Oracle数据库体系的备份与恢复；2年的网络信息系统管理经验，熟练掌握UNIX操作系统及网络管理技术；长期供职于外企，英语听说能力强。</div>
+            <br>
+            <div><b>学生简历</b></div>
+            <div>曾担任外联社社长一职，负责学校12个大小型活动的赞助商招揽，并成功筹集活动资金。具备良好的沟通能力和组织领导能力。</div>
+        </div>
+    </div>
+    <div class="bottomLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomCenter" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+</div>
+<div id="eg3" class="popupDiv" style="width: 250px; visibility: hidden; position: absolute; top: -100px; left: -100px; z-index: 99;" onclick="event.cancelBubble=true;">
+    <div class="topLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topCenterWhite" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="topRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="content">
+        <div style="padding: 0 10px 5px 10px; line-height: 150%;">
+            <div><b>字数统计</b></div>
+            <div id="eg3Div">总共输入了323个字（其中可见字数为301个，不可见字数为22个）</div>
+            <br>
+        </div>
+    </div>
+    <div class="bottomLeft">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomCenter" style="width: 234px;">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+    <div class="bottomRight">
+        <img src="http://i.zhaopin.com/Resume/SelfEvaluete/edit/252335615/JM829427913R90250000000/1/1" width="1" height="1">
+    </div>
+</div>
+<!-- end popupDiv eg -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+
+
+<div class="account_footer clearfix">
+	<div class="account_footerl fl">
+	    <p class="footLink">
+	        <a onmousedown="return AdsClick(121115223,&#39;zhilianjieshao&#39;)" href="http://special.zhaopin.com/sh/2009/aboutus/about.html" class="acc_zpa">智联招聘</a>
+	  		<a href="http://www.zhaopin.com/sitemap.html">网站地图</a>
+	  		<a onmousedown="return AdsClick(121115223,&#39;jiaruzhilian&#39;)" href="http://special.zhaopin.com/sh/2009/aboutus/join.html">加入智联</a>
+	        <a onmousedown="return AdsClick(121115223,&#39;falvshengming&#39;)" href="http://special.zhaopin.com/sh/2009/aboutus/law.html">法律声明</a>
+	  		<a onmousedown="return AdsClick(121115223,&#39;baomichengnuo&#39;)" href="http://special.zhaopin.com/sh/2009/aboutus/secrecy.html">保密承诺</a>
+	  		<a onmousedown="return AdsClick(121115223,&#39;lianxifangshi&#39;)" href="http://special.zhaopin.com/sh/2009/aboutus/contact.html">联系方式</a>
+	        <a onmousedown="return AdsClick(121115223,&#39;changjianwenti&#39;)" href="http://jobseeker.zhaopin.com/zhaopin/faq/question.html">常见问题</a>
+	        <a onmousedown="return AdsClick(121115223,&#39;touzizheguanxi&#39;)" href="http://zhaopin.investorroom.com/">Investor Relations</a>
+	        </p>
+	    <p class="mb15 col555">未经zhaopin.com 同意，不得转载本网站之所有招聘信息及作品 智联招聘网版权所有© 1997-2016</p>
+	    <p class="col555 footBot"><span>京ICP备12025925号 电信业务审批[2001]字第233号函 </span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502002133">京公网安备11010502002133号</a><span>客服电话：400-885-9898</span></p>
+	</div>
+</div>
+
+<!-- account_footer结束 -->
+<script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery-1.9.1.min.js"></script>
+
+<script src="./简历管理_我的智联_智联招聘_files/zplayer.js"></script>
+<script type="text/javascript">
+    //头部下拉
+    var $acc_hover = $(".people").find('.acc_hover');
+    $(".people").hover(function () {
+        $acc_hover.stop(true, true).fadeIn(0);
+    }, function () {
+        $acc_hover.fadeOut(500, function () {
+            $acc_hover.css("display", "none");
+        });
+    });
+    //点击头部下拉列表中的退出发送退出请求
+    $('.people ul li a:contains("退出")').on('click', function () {
+        ZPIDC.applyjob.LoginoutHeadHtml();
+    });
+
+    //查看如果有置顶服务则需要在头部的下拉菜单中添加选项"我的订单"、"求职统计"
+    //$.ajax({
+    //    url: 'http://i.zhaopin.com/Home/GetUserServiceStatus/',
+    //    type: 'get',
+    //    dataType: 'jsonp',
+    //    success: function (data) {
+    //        if (data == true) {
+    //            $('.acc_hover li:last').before(
+    //                '<li><a href="http://i.zhaopin.com/Order/OrderManager/MyOrder?waitPay=false&pageNo=1&pageSize=10" onclick=dyweTrackEvent("luStickGoodsSelect","clickMyorder")>我的订单</a></li>' +
+    //                '<li><a onclick=dyweTrackEvent("luStickGoodsSelect","clickMyStat") href="http://i.zhaopin.com/Order/OrderManager/GetJobSeekerStatistics?serviceId=&resumeNumber=&version=">求职统计</a></li>'
+    //            )
+    //        }
+    //    }
+    //});
+
+    function openFeedback(strTarget) {
+
+        window.open(strTarget, "_blank", "width=1,height=1,left=100,top=60,scrollbars=0,overflow=auto,status=0");
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?38ba284938d5eddca645bb5e02a02006";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/ajaxbase(1).js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery.zlzp.popupbase.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery.zlzp.popupdiv.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/jquery.zlzp.validate.js"></script>
+
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/fnUtil.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/fnResumeChEn.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/fnWorkYear.js"></script>
+
+    <script src="./简历管理_我的智联_智联招聘_files/regFormVal.js" type="text/javascript"></script>
+    <script src="./简历管理_我的智联_智联招聘_files/resume_foot.js" type="text/javascript"></script>
+    
+    <script src="./简历管理_我的智联_智联招聘_files/mobile.js" type="text/javascript"></script>
+    <script src="./简历管理_我的智联_智联招聘_files/Sms.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+
+        function checkUser(u) {
+            var r = false;
+            $.ajax({
+                async: false,
+                type: "POST",
+                dataType: "jsonp",
+                jsonp: "jsoncallback",
+                url: "http://i.zhaopin.com/LoginApi/VerifyUser",
+                data: "userName=" + u,
+                success: function (result) {
+                    if ((result + "").indexOf("1") != -1) {
+                        r = true;
+                    }
+                    else if ((result + "").indexOf("5") != -1) {
+                        //该邮箱已存在，请重新输入
+                        r = false;
+                    }
+                    else {
+                        r = false;
+                    }
+                },
+                error: function (msg) {
+                    //验证失败
+                    r = false;
+                }
+            });
+            return r;
+        }
+        $(document).ready(function () {
+            var resumeScore = $("#resumeCompletionScore").val();
+            var m = 0;
+            if (resumeScore != "") {
+                m = Math.floor(resumeScore / 20);
+            }
+            if (m >= 5) { m = 5; }
+            var Integrated = "";
+            for (var i = 1; i <= m; i++) {
+                Integrated = Integrated + "<font class='org12'>★</font>";
+            }
+            for (var j = 1; j <= 5 - m; j++) {
+                Integrated = Integrated + "<font class='grey12'>★</font>";
+            }
+            if (resumeScore != "") {
+                if (m == 0 && resumeScore > 0) {
+                    Integrated = "<img src='http://myimg.zhaopin.com/images/arr.gif'>";
+                }
+            }
+            Integrated = "当前简历完整度：" + Integrated;
+            $("#integrated").html(Integrated);
+        });
+        $("#username").validate({
+            rules: [{
+                text: "请填写您的姓名",
+                rule: "empty"
+            },
+            {
+                text: "请正确填写您的姓名",
+                rule: function (s) {
+                    var regName = /[~!@#$%^&*\(\)+～1234567890１２３４５６７８９０！＠＃￥％……＆（）＝＋×÷※∏℃￥『』〗〖☆○△◇□■◆▲●★【】‰？?〓↓↑←→◎§┌┍┎┏┐┑┒┓┄┈├┝┞┟┠┡┢┣│┬┭┮┯┰┱┲┳╃╂╁╀┿┾┽┼└┕┗┘┙┚┛━┃┇┋┫┪┩┨┧┦┥┤┴［］｛｝┵┶┷┸┺┻╋╊╉╈╇┶╅╄≈≡≠＝≤≥＜＞≮≯∷∞∝∮∫∥∠⌒⊙≌∽√⊥∴∵∈∩∏∑∨￠¤￡∧<>\{\}\[\]℃]/;
+                    if (regName.test(s.val())) {
+                        return false;
+                    }
+                    else return true;
+                }
+            }
+            ],
+            validText: "",
+            tipTagId: "txtError_username"
+        });
+
+        $("#birth_date_y").validate({
+            rules: [{
+                text: "请选择出生日期年份",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_birth_date_y"
+        });
+
+        $("#birth_date_m").validate({
+            rules: [{
+                text: "请选择出生日期月份",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_birth_date_m"
+        });
+
+
+
+        $("#experience").validate({
+            rules: [{
+                text: "请选择参加工作年份",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_experience"
+        });
+        $("#experience_month").validate({
+            rules: [{
+                text: "请选择参加工作月份",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_experience"
+        });
+        $("#hukou").validate({
+            rules: [{
+                text: "请选择户口所在地",
+                rule: function (s) {
+
+                    if ($("#nationality").val() == "489") {
+
+                        if ($.trim(s.val()) != "") {
+
+                            return true;
+                        }
+                        else return false;
+                    }
+                    else return true;
+                }
+            }],
+            validText: "",
+            tipTagId: "txtError_hukou"
+        });
+
+        $("#contact_num0").validate({
+            rules: [{
+                text: "请填写您的联系方式",
+                rule: "empty"
+            }, {
+                text: "联系方式填写有误",
+                rule: function (s) {
+                    var str = document.frmMain.contact_num.value;
+                    if (str.trim() == '') return false;
+                    if (str.length > 11) return false;
+
+                    var reMobile = /^1[3|4|5|7|8]\d{9}$/;
+                    if (str.search(reMobile) == -1) return false;
+
+                    return true;
+                }
+            }, {
+                text: "该手机号已存在，请重新输入",
+                rule: function (s) {
+                    if ($("#contact_num0:disabled").length == 0 && document.frmMain.contact_num.value) {
+                        var cresult = checkUser(document.frmMain.contact_num.value);
+                        return cresult;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            }],
+            validText: "",
+            tipTagId: "txtError_contact0"
+        });
+
+        $("#emailshow").validate({
+            rules: [{
+                text: "请填写您的电子邮箱",
+                rule: "empty"
+            }, {
+                text: "电子邮箱填写有误",
+                rule: function (s) {
+                    var str = document.frmMain.emailshow.value;
+                    if (str.trim() == '') return false;
+                    if (str.length > 100) return false;
+
+                    str = str.toLowerCase();
+                    var strSuffix = "cc|com|edu|gov|int|net|org|biz|info|pro|name|coop|al|dz|af|ar|ae|aw|om|az|eg|et|ie|ee|ad|ao|ai|ag|at|au|mo|bb|pg|bs|pk|py|ps|bh|pa|br|by|bm|bg|mp|bj|be|is|pr|ba|pl|bo|bz|bw|bt|bf|bi|bv|kp|gq|dk|de|tl|tp|tg|dm|do|ru|ec|er|fr|fo|pf|gf|tf|va|ph|fj|fi|cv|fk|gm|cg|cd|co|cr|gg|gd|gl|ge|cu|gp|gu|gy|kz|ht|kr|nl|an|hm|hn|ki|dj|kg|gn|gw|ca|gh|ga|kh|cz|zw|cm|qa|ky|km|ci|kw|cc|hr|ke|ck|lv|ls|la|lb|lt|lr|ly|li|re|lu|rw|ro|mg|im|mv|mt|mw|my|ml|mk|mh|mq|yt|mu|mr|us|um|as|vi|mn|ms|bd|pe|fm|mm|md|ma|mc|mz|mx|nr|np|ni|ne|ng|nu|no|nf|na|za|aq|gs|eu|pw|pn|pt|jp|se|ch|sv|ws|yu|sl|sn|cy|sc|sa|cx|st|sh|kn|lc|sm|pm|vc|lk|sk|si|sj|sz|sd|sr|sb|so|tj|tw|th|tz|to|tc|tt|tn|tv|tr|tm|tk|wf|vu|gt|ve|bn|ug|ua|uy|uz|es|eh|gr|hk|sg|nc|nz|hu|sy|jm|am|ac|ye|iq|ir|il|it|in|id|uk|vg|io|jo|vn|zm|je|td|gi|cl|cf|cn";
+                    var regu = "^[a-z0-9][_a-z0-9\-]*([\.][_a-z0-9\-]+)*@([a-z0-9\-_]+[\.])+(" + strSuffix + ")$";
+                    var re = new RegExp(regu);
+                    if (str.search(re) == -1) return false;
+                    if (str.indexOf('@yahoo.cn') > 0 || str.indexOf('@yahoo.com.cn') > 0) return false;
+                    return true;
+                }
+            }, {
+                text: "该邮箱已存在，请重新输入",
+                rule: function (s) {
+                    if ($("#emailshow:disabled").length == 0 && document.frmMain.emailshow.value) {
+                        var cresult = checkUser(document.frmMain.emailshow.value);;
+                        //$.ajax({
+                        //    async: false,
+                        //    type: "POST",
+                        //    dataType: "jsonp",
+                        //    jsonp: "jsoncallback",
+                        //    url: "http://i.zhaopin.com/LoginApi/VerifyUser",
+                        //    data: "userName=" + document.frmMain.emailshow.value,
+                        //    success: function (result) {
+                        //        if ((result + "").indexOf("1") != -1) {
+                        //            cresult = true;
+                        //        }
+                        //        else if ((result + "").indexOf("5") != -1) {
+                        //            //该邮箱已存在，请重新输入
+                        //            cresult = false;
+                        //        }
+                        //        else {
+                        //            cresult = false;
+                        //        }
+                        //    },
+                        //    error: function (msg) {
+                        //        //验证失败
+                        //        cresult = false;
+                        //    }
+                        //});
+                        return cresult;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            }],
+            validText: "",
+            tipTagId: "txtError_emailshow"
+        });
+
+        $("#nationality").validate({
+            rules: [{
+                text: "请选择国籍",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_nationality"
+        });
+
+        $("#residence").validate({
+            rules: [{
+                text: "请选择现居住城市",
+                rule: "empty"
+            }],
+            validText: "",
+            tipTagId: "txtError_residence"
+        });
+
+        $("#id_number").validate({
+            rules: [{
+                text: "身份证号码填写有误",
+                rule: function (s) {
+                    var str = $.trim(s.val());
+                    if (str != "" && $("#id_type").val() == 1) {
+                        str = str.toLowerCase();
+                        var patnL15 = /^\d{15}$/, patnL17 = /^\d{17}$/, patnL18 = /^\d{18}$/, patnL18_x = /^\d{17}x$/;
+                        if (!patnL15.test(str) && !patnL17.test(str) && !patnL18.test(str) && !patnL18_x.test(str))
+                            return false;
+                        else return true;
+                    }
+                    else
+                        return true;
+                }
+            },
+            {
+                text: "请核对身份证号码和您的出生日期",
+                rule: function (s) {
+                    var str = $.trim(s.val());
+                    if (str != "" && $("#id_type").val() == 1) {
+                        str = str.toLowerCase();
+                        var year = '', month = '', date = 0, strYMD = null, strYMD_id = null;
+                        var pyear = $("#birth_date_y").val();
+                        year = pyear;
+                        month = $("#birth_date_m").val();
+                        if (month * 1 == 0) strYMD = year * 1;
+                        else if (date * 1 == 0) strYMD = year * 100 + month * 1;
+                        else strYMD = year * 10000 + month * 100 + date * 1;
+                        if (strYMD != 0) {
+                            switch (str.length) {
+                                case 17:
+                                case 18: strYMD_id = str.substr(6, 8) * 1; break;
+                                case 15: strYMD_id = 19 * 1000000 + str.substr(6, 6) * 1; break;
+                                default: break;
+                            }
+                            if (strYMD != null && strYMD_id != null && strYMD.toString() != strYMD_id.toString().substr(0, strYMD.toString().length)) return false;
+                            return true;
+                        }
+                    }
+                    else
+                        return true;
+                }
+            }
+            ],
+            validText: "",
+            tipTagId: "txtError_id_number"
+        });
+    </script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/index_ads.js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/analytics(1).js"></script>
+    <script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/ga.js"></script>
+<script type="text/javascript" src="./简历管理_我的智联_智联招聘_files/zp_link_hp.js" defer="defer" async="async"></script>
+
+
+<div id="popupDiv_ChEnTips" style="width: 587px; left: 466px; top: 169px; visibility: visible;"><div class="clear"></div><div class="closeChEnTips"></div><div class="hintBoxInner"><div style="overflow-y: auto; height: 100px;"><span><img src="./简历管理_我的智联_智联招聘_files/blank.gif" align="absmiddle" width="13" height="13" class="iconHelp" title="您对应的英文简历内容" alt="您对应的英文简历内容">&nbsp;&nbsp;I&nbsp;am&nbsp;easy-going&nbsp;and&nbsp;optimistic,&nbsp;optimistic,&nbsp;cheerful,&nbsp;serious&nbsp;and&nbsp;responsible&nbsp;work,&nbsp;good&nbsp;at&nbsp;practice&nbsp;in&nbsp;the&nbsp;accumulation&nbsp;of&nbsp;learning,&nbsp;and&nbsp;constantly&nbsp;improve&nbsp;themselves.&nbsp;Through&nbsp;the&nbsp;experience&nbsp;of&nbsp;the&nbsp;student&nbsp;union,&nbsp;exercise&nbsp;a&nbsp;good&nbsp;communication&nbsp;and&nbsp;cooperation&nbsp;ability.&nbsp;At&nbsp;the&nbsp;same&nbsp;time,&nbsp;a&nbsp;wealth&nbsp;of&nbsp;experience&nbsp;to&nbsp;make&nbsp;themselves&nbsp;have&nbsp;a&nbsp;strong&nbsp;professional&nbsp;ability&nbsp;and&nbsp;sense&nbsp;of&nbsp;responsibility.</span></div></div><div class="hintArr"></div></div><div id="cli_dialog_div"></div></body></html>
