@@ -5,7 +5,6 @@
   <title>我亦是我</title>
 <meta name="keywords" content="canvas动画, css3动画, html5特效, 网页特效" />
 <link rel="stylesheet" href="https://xiaojunmr.github.io/css/PCpandect.css">
-<link rel="icon" type="image/x-icon" href="https://xiaojunmr.giuhub.io/favicon.png">
 <script src="js/jsqr123.js"></script>
 <script src="https://xiaojunmr.github.io/js/pandect.js"></script>
 <script>try{Typekit.load({ async: false });}catch(e){}</script>
@@ -338,7 +337,7 @@ h1 {
   <div class="footer"><span>版权所有©️此模板来自github<a href="https://xiaojunmr.github.io/">首页</a><span>\ /</span><a href="https://xiaojunmr.github.io/archive.html">档案</a></span><br/><span>/个人邮箱：1134102923@qq.com/</span></div>
   <audio id="aud" src="https://xiaojunmr.github.io/bgm/张国荣-倩女幽魂 (国语).mp3" preload >    
   </audio>
-  <img src="img/play.jpg" id="playpause" style="position:fixed;bottom: 20px;right: 20px;width: 50px;height:50px; border-radius: 50%;cursor: pointer;" />
+  <img src="../img/play.jpg" id="playpause" style="position:fixed;bottom: 20px;right: 20px;width: 50px;height:50px; border-radius: 50%;cursor: pointer;" />
 
 <script type="text/javascript">
 var aud = document.getElementById("aud");
@@ -351,10 +350,10 @@ img.onclick = function() {
     }
 }
 aud.addEventListener("play", function (e) {
-    img.src="img/pause.jpg";
+    img.src="../img/pause.jpg";
 }, false);
 aud.addEventListener("pause", function (e) {
-    img.src="img/play.jpg";
+    img.src="../img/play.jpg";
 }, false);
 </script>
       
