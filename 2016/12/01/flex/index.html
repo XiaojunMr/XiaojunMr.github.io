@@ -280,9 +280,9 @@ inherit            从父元素继承该属性。请参阅 inherit。
             <footer class="footer">
 
     <span class="footer__copyright">&copy; 2016-2017 | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a>欢迎关注个人微博<a href ="http://weibo.com/u/6047911635">你爱的睡宝宝</a></span>
-    <audio id="aud" src="https://xiaojunmr.github.io/bgm/李玟-想你的365天(《宝莲灯》动画电影插曲).mp3" preload >    
+    <audio id="aud" src="https://xiaojunmr.github.io/bgm/李玟-想你的365天(《宝莲灯》动画电影插曲).mp3" preload autoplay>    
   </audio>
-  <img src="../img/play.jpg" id="playpause" style="position:fixed;bottom: 20px;right: 20px;width: 50px;height:50px; border-radius: 50%;cursor: pointer;" />
+  <img src="https://xiaojunmr.github.io/images/play.jpg" id="playpause" style="position:fixed;bottom: 20px;right: 20px;width: 50px;height:50px; border-radius: 50%;cursor: pointer;" />
 
 <script type="text/javascript">
 var aud = document.getElementById("aud");
@@ -295,10 +295,10 @@ img.onclick = function() {
     }
 }
 aud.addEventListener("play", function (e) {
-    img.src="../img/pause.jpg";
+    img.src="https://xiaojunmr.github.io/images/pause.jpg";
 }, false);
 aud.addEventListener("pause", function (e) {
-    img.src="../img/play.jpg";
+    img.src="https://xiaojunmr.github.io/images/play.jpg";
 }, false);
 </script>
     
