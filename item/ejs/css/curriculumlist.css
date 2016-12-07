@@ -1,0 +1,218 @@
+@charset "UTF-8";
+body {
+  background-color: #F1F1F1; }
+
+/**头部 导航栏部分**/
+.header {
+  background: white; }
+  .header .container {
+    position: relative;
+    margin: 0 auto;
+    width: 1225px; }
+    .header .container .header-box {
+      height: 43px;
+      padding: 23.5px 0px; }
+      .header .container .header-box .headerImg {
+        display: inline; }
+      .header .container .header-box ul {
+        bottom: 16px;
+        left: 20px;
+        position: relative;
+        display: inline; }
+        .header .container .header-box ul li {
+          padding: 0 20px;
+          border: none;
+          display: inline; }
+          .header .container .header-box ul li .alterant {
+            color: #29b572; }
+      .header .container .header-box .headerRight {
+        top: 40px;
+        padding: 2px 1px;
+        position: absolute;
+        right: 0px; }
+        .header .container .header-box .headerRight .primary {
+          border-right: 1px solid #999; }
+        .header .container .header-box .headerRight .pp .alterant {
+          color: #29b572; }
+        .header .container .header-box .headerRight span {
+          padding: 0px 6px; }
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1225px; }
+
+.curriculumImg {
+  padding: 15px;
+  margin-top: 30px;
+  background: #FFFFFF;
+  margin-bottom: 30px; }
+  .curriculumImg img {
+    float: left;
+    width: 429px;
+    height: 243px;
+    margin-right: 30px; }
+  .curriculumImg h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    margin-bottom: 138px; }
+  .curriculumImg .hour {
+    border-right: 1px solid #F1F1F1; }
+  .curriculumImg p {
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #999;
+    line-height: 22px; }
+    .curriculumImg p span {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 18px;
+      color: #888888;
+      display: block; }
+
+.courseplaylist {
+  margin-bottom: 30px; }
+  .courseplaylist .courseplaylist_left {
+    float: left;
+    width: 1185px;
+    background: #ffffff;
+    padding: 30px 20px 0px 20px; }
+    .courseplaylist .courseplaylist_left ul li div {
+      background-color: #F1F1F1; }
+      .courseplaylist .courseplaylist_left ul li div span {
+        float: left;
+        font-size: 22px;
+        color: #F1F1F1;
+        padding: 10px 15px;
+        background-color: #29b572; }
+      .courseplaylist .courseplaylist_left ul li div h3 {
+        float: left;
+        line-height: 40px; }
+    .courseplaylist .courseplaylist_left ul li p {
+      height: 100px;
+      line-height: 100px;
+      position: relative; }
+      .courseplaylist .courseplaylist_left ul li p em {
+        float: left;
+        margin: 39px 20px 0 36px;
+        text-align: center;
+        width: 22px;
+        height: 16px;
+        line-height: normal;
+        background-color: #c5f1dc; }
+      .courseplaylist .courseplaylist_left ul li p span {
+        float: left;
+        font-size: 16px;
+        color: #666;
+        width: 900px; }
+      .courseplaylist .courseplaylist_left ul li p a {
+        margin-top: 30px;
+        line-height: 34px;
+        text-align: center;
+        display: none;
+        float: right;
+        border: 1px solid #29b572;
+        border-radius: 18px;
+        width: 108px;
+        height: 34px;
+        color: #29b572;
+        font-size: 18px; }
+      .courseplaylist .courseplaylist_left ul li p i {
+        color: #909090;
+        float: right;
+        padding: 0;
+        background-color: transparent; }
+    .courseplaylist .courseplaylist_left ul li p:hover em {
+      background-color: #29b572; }
+
+/**页尾**/
+.footer {
+  width: 100%;
+  background-color: white; }
+  .footer .minWidth {
+    margin: 0 auto;
+    width: 1225px; }
+    .footer .minWidth .friendshiplink {
+      height: 60px;
+      line-height: 60px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e8e8e8; }
+      .footer .minWidth .friendshiplink h2 {
+        float: left;
+        margin-right: 28px; }
+      .footer .minWidth .friendshiplink p {
+        float: left; }
+        .footer .minWidth .friendshiplink p a {
+          font-size: 16px;
+          margin-right: 42px;
+          color: #666666; }
+        .footer .minWidth .friendshiplink p a:hover {
+          color: #333; }
+      .footer .minWidth .friendshiplink .rightMore {
+        float: right;
+        font-size: 16px;
+        color: #666666; }
+      .footer .minWidth .friendshiplink .rightMore:hover {
+        color: #333; }
+    .footer .minWidth .morelinks {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e8e8e8;
+      /**app二维码**/ }
+      .footer .minWidth .morelinks ul {
+        float: left;
+        width: 164px;
+        margin-right: 10px; }
+        .footer .minWidth .morelinks ul h3 {
+          font-size: 16px;
+          color: #444;
+          margin-bottom: 25px; }
+        .footer .minWidth .morelinks ul li {
+          display: block;
+          margin-bottom: 8px; }
+          .footer .minWidth .morelinks ul li a {
+            color: #808080; }
+          .footer .minWidth .morelinks ul li a:hover {
+            color: #444; }
+      .footer .minWidth .morelinks .feedback {
+        width: 260px; }
+      .footer .minWidth .morelinks .appcode {
+        text-align: center;
+        float: right; }
+        .footer .minWidth .morelinks .appcode h3 {
+          font-size: 16px;
+          color: #444;
+          margin-bottom: 25px; }
+        .footer .minWidth .morelinks .appcode img {
+          text-align: center; }
+        .footer .minWidth .morelinks .appcode span {
+          font-size: 12px;
+          text-align: center;
+          display: block; }
+
+/**友情链接**/
+.companyname {
+  background-color: white; }
+  .companyname .container {
+    width: 1225px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px; }
+    .companyname .container span {
+      color: #808080;
+      font-size: 13px; }
+
+/**回到顶部**/
+.btn {
+  position: fixed;
+  bottom: 150px;
+  right: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: #29b572;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px; }

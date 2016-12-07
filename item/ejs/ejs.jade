@@ -1,0 +1,46 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title ejs响应式
+		link(rel="stylesheet" type="text/css" href="bootstrap.css")
+		link(rel="stylesheet" type="text/css" href="ejs.css")
+		link(rel="stylesheel" href="/Users/lanou/Desktop/dist/js/bootstrap.js")
+		script(src="ejs.js")
+	body
+		//页头————导航栏
+		header#header.header
+			div.container
+				h1#h1.logo.pull-left 
+					a.scrollto
+						span.logo-title EJS
+				nav#main-nav.main-nav.navbar-right
+					ul.list-inline.nav_ul
+						li.nav_li.nav-item.active
+							a.nav_a About
+						li.nav_li.nav-item.active
+							a.nav_a Features
+						li.nav_li.nav-item.active
+							a.nav_a Docs
+						li.nav_li.nav-item.active
+							a.nav_a Support
+						li.nav_li.nav-item.active
+							a.nav_a license
+						li.nav_li.nav-item.active
+							a.nav_a GitHub
+		section#section.section
+			div#section_item.container
+				h2#h2.h2_log
+					span(style="font-size: 59px;") <%= 
+					span(style="font-size: 98px;") EJS 
+					span(style="font-size: 59px;") %>
+				p.sItem_p Effective JavaScript templating.
+				div.btns
+					a.btn.btn-cta-secondary.scrollto(href="install") GET STARTED
+				ul.sectionUl(style="list-style:none;")
+					li(style="width:1px;height:22px;")
+		div.fusco
+			div.social-media-inner.container.text-center
+		div
+
+

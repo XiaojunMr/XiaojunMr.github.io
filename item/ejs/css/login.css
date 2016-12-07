@@ -1,0 +1,199 @@
+@charset "UTF-8";
+body {
+  background-color: transparent; }
+
+/**头部 导航栏部分**/
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 970px; }
+
+.header {
+  background: white; }
+  .header .header-box {
+    height: 90px; }
+    .header .header-box .headerImg {
+      position: absolute;
+      height: 90px;
+      width: 222px;
+      display: inline-block;
+      line-height: 120px; }
+    .header .header-box .headerRight {
+      top: 0px;
+      position: absolute;
+      right: 0px; }
+      .header .header-box .headerRight ul {
+        bottom: 16px;
+        left: 20px;
+        position: relative;
+        display: inline; }
+        .header .header-box .headerRight ul li {
+          float: left;
+          height: 90px;
+          margin-left: 50px;
+          line-height: 90px;
+          border: none; }
+          .header .header-box .headerRight ul li a {
+            font-size: 16px; }
+          .header .header-box .headerRight ul li .alterant {
+            color: #29b572; }
+
+/**页尾注释**/
+.companyname {
+  background-color: white; }
+  .companyname .container {
+    width: 1225px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px; }
+    .companyname .container span {
+      color: #808080;
+      font-size: 13px; }
+
+/**回到顶部**/
+.btn {
+  position: fixed;
+  bottom: 150px;
+  right: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: #29b572;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px; }
+
+/**登录==**/
+.login {
+  background: url(../img/login_bg.jpg) no-repeat center;
+  min-height: 600px;
+  background-attachment: scroll; }
+  .login input {
+    outline: none; }
+  .login .container {
+    height: 600px; }
+
+.winlogin {
+  position: absolute;
+  top: 76px;
+  right: 0px;
+  width: 320px;
+  background-color: white; }
+  .winlogin .logintitle {
+    overflow: visible;
+    height: 50px;
+    border-bottom: 1px solid #e8e8e8; }
+    .winlogin .logintitle a {
+      text-align: center;
+      display: block;
+      float: left;
+      width: 160px;
+      line-height: 50px;
+      color: #666666;
+      font-size: 16px; }
+    .winlogin .logintitle .show {
+      font-size: 18px;
+      font-weight: 500;
+      color: #29b572;
+      border-bottom: 1px solid #29b572; }
+
+.loginIn {
+  width: 260px;
+  padding: 36px 30px 0; }
+
+form {
+  width: 260px; }
+  form .phone_box, form .error {
+    width: 258px;
+    height: 20px;
+    line-height: 20px;
+    padding: 9px 0px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border: 1px solid #cccccc; }
+    form .phone_box span, form .error span {
+      float: left;
+      width: 14px;
+      height: 20px;
+      margin-right: 12px;
+      padding-right: 9px;
+      margin-left: 10px;
+      display: inline-block;
+      border-right: 1px solid #e8e8e8;
+      background: url(../img/15ico_bg.png) no-repeat 0px 2px; }
+  form .eBox {
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px; }
+    form .eBox .verification_left {
+      float: left;
+      width: 160px;
+      height: 20px;
+      line-height: 20px;
+      padding: 9px 0px;
+      margin-bottom: 15px;
+      background: #ffffff;
+      border: 1px solid #cccccc; }
+      form .eBox .verification_left span {
+        float: left;
+        width: 14px;
+        height: 20px;
+        margin-right: 12px;
+        padding-right: 9px;
+        margin-left: 10px;
+        display: inline-block;
+        border-right: 1px solid #e8e8e8;
+        background: url(../img/15ico_bg.png) no-repeat 0px -48px; }
+    form .eBox .verification_right {
+      float: right; }
+    form .eBox span {
+      background: url(../img/15ico_bg.png) no-repeat 0px -22px; }
+  form .remembercont {
+    margin-bottom: 10px; }
+    form .remembercont .remember {
+      float: left;
+      left: 0;
+      font-size: 12px;
+      color: #808080; }
+    form .remembercont .forget {
+      float: right;
+      right: 0;
+      font-size: 12px;
+      color: #808080; }
+  form .submit {
+    border: none;
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #29b572;
+    margin-bottom: 30px;
+    color: #fff; }
+
+.phone_box input, .error input, .eBox input {
+  width: 212px;
+  height: 20px; }
+
+.loginIn .eBox input {
+  width: 110px; }
+
+/**注册**/
+.register {
+  display: none;
+  padding: 36px 30px 0; }
+  .register .rememberl {
+    font-size: 16px;
+    color: #29b275; }
+  .register .eBox .verification_left input {
+    width: 110px; }
+
+#verification {
+  padding: 10px;
+  font-size: 14px;
+  color: #29b275;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
+
+#verification:hover {
+  border: 1px solid #29b275; }

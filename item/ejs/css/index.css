@@ -1,0 +1,428 @@
+@charset "UTF-8";
+body {
+  background-color: #F1F1F1; }
+
+/**头部 导航栏部分**/
+.header {
+  background: white; }
+  .header .container {
+    position: relative;
+    margin: 0 auto;
+    width: 1226px; }
+    .header .container .header-box {
+      height: 43px;
+      padding: 23.5px 0px; }
+      .header .container .header-box .headerImg {
+        display: inline; }
+      .header .container .header-box ul {
+        bottom: 16px;
+        left: 20px;
+        position: relative;
+        display: inline; }
+        .header .container .header-box ul li {
+          padding: 0 20px;
+          border: none;
+          display: inline; }
+          .header .container .header-box ul li .alterant {
+            color: #29b572; }
+      .header .container .header-box .headerRight {
+        top: 40px;
+        padding: 2px 1px;
+        position: absolute;
+        right: 0px; }
+        .header .container .header-box .headerRight .primary {
+          border-right: 1px solid #999; }
+        .header .container .header-box .headerRight .pp .alterant {
+          color: #29b572; }
+        .header .container .header-box .headerRight span {
+          padding: 0px 6px; }
+
+/**教授课程**/
+.first .container {
+  margin: 0px auto;
+  width: 1225px; }
+  .first .container .itemBox .imgLeft {
+    position: relative;
+    float: left;
+    width: 975px;
+    height: 346px; }
+    .first .container .itemBox .imgLeft ol {
+      position: absolute;
+      width: 60px;
+      height: 20px;
+      bottom: 20px;
+      right: 40px; }
+      .first .container .itemBox .imgLeft ol li {
+        display: inline-block; }
+  .first .container .itemBox .info {
+    float: left;
+    background-color: #FeFeFe;
+    padding: 0 20px; }
+    .first .container .itemBox .info .registerBtn {
+      border-bottom: 1px solid #F1F1F1;
+      width: 210px;
+      height: 111px; }
+      .first .container .itemBox .info .registerBtn img {
+        margin-top: 25px;
+        cursor: pointer; }
+      .first .container .itemBox .info .registerBtn p {
+        display: inline-block;
+        color: #808080;
+        position: relative;
+        bottom: 30px;
+        left: 15px;
+        line-height: 17px;
+        font-size: 13px; }
+      .first .container .itemBox .info .registerBtn a {
+        display: inline-block;
+        position: relative;
+        left: 80px;
+        bottom: 15px;
+        width: 60px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 4px;
+        color: #29b572; }
+      .first .container .itemBox .info .registerBtn .show {
+        color: white;
+        background-color: #029850; }
+    .first .container .itemBox .info .registerInfo {
+      width: 210px;
+      height: 161px;
+      border-bottom: 1px solid #F1F1F1;
+      padding: 15px 0; }
+      .first .container .itemBox .info .registerInfo .extend {
+        float: right;
+        color: #999; }
+      .first .container .itemBox .info .registerInfo .extend:hover {
+        color: #29b572; }
+      .first .container .itemBox .info .registerInfo ol li {
+        position: relative;
+        height: 75px;
+        width: 90px;
+        display: block;
+        float: left;
+        margin-left: 15px; }
+        .first .container .itemBox .info .registerInfo ol li div {
+          background-image: url(../img/itemO.png);
+          background-position: 0 5px;
+          background-repeat: no-repeat;
+          width: 40px;
+          height: 40px;
+          margin-left: 20px;
+          margin-top: 20px; }
+        .first .container .itemBox .info .registerInfo ol li .itemO2 {
+          background-position: 0px -35px; }
+        .first .container .itemBox .info .registerInfo ol li .itemO3 {
+          background-position: 0px -70px; }
+        .first .container .itemBox .info .registerInfo ol li .itemO4 {
+          background-position: 0 -105px; }
+        .first .container .itemBox .info .registerInfo ol li a {
+          position: absolute;
+          color: #808080; }
+      .first .container .itemBox .info .registerInfo ol li:hover .itemO1 {
+        background-position: 0px -144px; }
+      .first .container .itemBox .info .registerInfo ol li:hover .itemO2 {
+        background-position: 0px -184px; }
+      .first .container .itemBox .info .registerInfo ol li:hover .itemO3 {
+        background-position: 0px -219px; }
+      .first .container .itemBox .info .registerInfo ol li:hover .itemO4 {
+        background-position: 0px -254px; }
+      .first .container .itemBox .info .registerInfo ol li:hover a {
+        color: #29b572; }
+    .first .container .itemBox .info .registerBottom {
+      padding-left: 8px; }
+      .first .container .itemBox .info .registerBottom a {
+        color: #333;
+        border-bottom: 1px solid #808080;
+        line-height: 42px;
+        margin: 0 18px;
+        font-size: 14px; }
+
+/**学习方式**/
+.first {
+  margin-top: 30px; }
+
+.centBox {
+  margin-bottom: 35px; }
+
+.section {
+  margin-bottom: 35px; }
+  .section .container {
+    margin: 0px auto;
+    width: 1225px; }
+    .section .container .itemBox .h2 {
+      color: #444;
+      margin-bottom: 16px; }
+    .section .container .itemBox .Meun {
+      background-color: white;
+      padding: 20px; }
+    .section .container .itemBox .itemM {
+      width: 100%;
+      padding: 0px; }
+      .section .container .itemBox .itemM li {
+        position: relative;
+        display: inline;
+        width: 225px;
+        height: 144px;
+        margin-right: 15px; }
+        .section .container .itemBox .itemM li div {
+          text-align: center;
+          width: 225px;
+          height: 144px;
+          color: #F1F1F1;
+          display: none;
+          position: absolute;
+          line-height: 144px;
+          top: 0px;
+          left: 0px;
+          font-size: 14px;
+          background: rgba(9, 9, 9, 0.3); }
+      .section .container .itemBox .itemM .itemMeun {
+        display: block;
+        width: 225px;
+        height: 144px;
+        float: left;
+        position: static;
+        background-image: url(../img/itemMeun.jpg); }
+      .section .container .itemBox .itemM .itemMeunI2 {
+        background-position: -225px  0px; }
+      .section .container .itemBox .itemM .itemMeunI3 {
+        background-position: -450px 0px; }
+      .section .container .itemBox .itemM .itemMeunI4 {
+        background-position: -675px 0px; }
+      .section .container .itemBox .itemM .itemMeunI5 {
+        background-position: -900px 0px;
+        margin: 0; }
+      .section .container .itemBox .itemM li:hover div {
+        display: block; }
+    .section .container .itemBox .topic {
+      height: 136px;
+      background-color: #F6F6F6; }
+    .section .container .itemBox ul li {
+      width: 245px;
+      height: 136px;
+      display: inline-block;
+      float: left; }
+      .section .container .itemBox ul li div {
+        position: relative;
+        top: 40px;
+        width: 245px;
+        height: 60px;
+        border-right: 1px solid #e8e8e8; }
+        .section .container .itemBox ul li div span {
+          background-color: white;
+          margin-left: 20px;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          background: url(../img/itemOriginal.jpg); }
+      .section .container .itemBox ul li .itemOR1 {
+        width: 58px;
+        height: 58px;
+        background-position: 0px 0; }
+      .section .container .itemBox ul li .itemOR2 {
+        width: 58px;
+        height: 58px;
+        background-position: 236px 0px; }
+      .section .container .itemBox ul li .itemOR3 {
+        width: 58px;
+        background-position: 178px 0; }
+      .section .container .itemBox ul li .itemOR4 {
+        background-position: 120px 0; }
+      .section .container .itemBox ul li .itemOR5 {
+        background-position: 60px 0; }
+      .section .container .itemBox ul li a {
+        display: inline-block;
+        position: relative;
+        bottom: 20px;
+        left: 80px;
+        width: 160px;
+        font-size: 16px;
+        color: #333; }
+      .section .container .itemBox ul li a:hover {
+        color: #29b572; }
+      .section .container .itemBox ul li p {
+        display: inline-block;
+        position: relative;
+        bottom: 10px;
+        left: 80px;
+        width: 160px;
+        color: #b1b1b1; }
+
+/**学习氛围**/
+.itemHierarchy {
+  background-color: white;
+  height: 275px;
+  padding: 40px 36px; }
+  .itemHierarchy .learningstyle {
+    width: 247px;
+    float: left;
+    text-align: center;
+    margin-right: 55px; }
+    .itemHierarchy .learningstyle img {
+      margin-bottom: 25px; }
+    .itemHierarchy .learningstyle .h4 {
+      font-size: 16px;
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 10px; }
+    .itemHierarchy .learningstyle p {
+      font-size: 12px;
+      color: #808080;
+      text-align: left; }
+  .itemHierarchy .noMargins {
+    margin: 0px; }
+
+/**走出的人才例子**/
+.itemBox {
+  /**详细情况**/ }
+  .itemBox .h2 .nUm {
+    color: #ea9b65;
+    font-size: 20px; }
+  .itemBox .h2 span {
+    color: #888;
+    font-size: 20px; }
+  .itemBox .example {
+    padding: 40px 17px;
+    height: 330px;
+    background-color: white; }
+    .itemBox .example .case {
+      text-align: center;
+      width: 200px;
+      height: 326px;
+      float: left;
+      background-image: url(../img/learninguser_bg.png);
+      margin-right: 47px; }
+      .itemBox .example .case img {
+        margin-bottom: 30px; }
+      .itemBox .example .case span {
+        line-height: 24px;
+        display: block;
+        font-size: 14px;
+        color: #333333; }
+      .itemBox .example .case p {
+        margin: 30px 0 8px; }
+      .itemBox .example .case h3 {
+        color: #333;
+        font-size: 20px; }
+    .itemBox .example .noMargins {
+      margin: 0px; }
+
+/**合作机构**/
+.item_CPcontainer {
+  padding: 50px 28px;
+  background-color: white;
+  position: relative; }
+  .item_CPcontainer .prevBtn {
+    position: absolute;
+    top: 50px;
+    line-height: 52px;
+    width: 14px;
+    left: 10px;
+    color: #999;
+    cursor: pointer; }
+  .item_CPcontainer .nextBtn {
+    position: absolute;
+    top: 50px;
+    line-height: 52px;
+    width: 14px;
+    right: 10px;
+    color: #999;
+    cursor: pointer; }
+  .item_CPcontainer .cp_Name {
+    height: 50px;
+    overflow: hidden; }
+    .item_CPcontainer .cp_Name li {
+      height: 50px;
+      display: block;
+      float: left;
+      margin: 0 9px 0 6px; }
+
+/**页尾**/
+.footer {
+  width: 100%;
+  background-color: white; }
+  .footer .minWidth {
+    margin: 0 auto;
+    width: 1225px; }
+    .footer .minWidth .friendshiplink {
+      height: 60px;
+      line-height: 60px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e8e8e8; }
+      .footer .minWidth .friendshiplink h2 {
+        float: left;
+        margin-right: 28px; }
+      .footer .minWidth .friendshiplink p {
+        float: left; }
+        .footer .minWidth .friendshiplink p a {
+          font-size: 16px;
+          margin-right: 42px;
+          color: #666666; }
+        .footer .minWidth .friendshiplink p a:hover {
+          color: #333; }
+      .footer .minWidth .friendshiplink .rightMore {
+        float: right;
+        font-size: 16px;
+        color: #666666; }
+      .footer .minWidth .friendshiplink .rightMore:hover {
+        color: #333; }
+    .footer .minWidth .morelinks {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e8e8e8; }
+      .footer .minWidth .morelinks ul {
+        float: left;
+        width: 164px;
+        margin-right: 10px; }
+        .footer .minWidth .morelinks ul h3 {
+          font-size: 16px;
+          color: #444;
+          margin-bottom: 25px; }
+        .footer .minWidth .morelinks ul li {
+          display: block;
+          margin-bottom: 8px; }
+          .footer .minWidth .morelinks ul li a {
+            color: #808080; }
+          .footer .minWidth .morelinks ul li a:hover {
+            color: #444; }
+      .footer .minWidth .morelinks .feedback {
+        width: 260px; }
+      .footer .minWidth .morelinks .appcode {
+        text-align: center;
+        float: right; }
+        .footer .minWidth .morelinks .appcode h3 {
+          font-size: 16px;
+          color: #444;
+          margin-bottom: 25px; }
+        .footer .minWidth .morelinks .appcode img {
+          text-align: center; }
+        .footer .minWidth .morelinks .appcode span {
+          font-size: 12px;
+          text-align: center;
+          display: block; }
+
+/**友情链接**/
+.companyname {
+  background-color: white; }
+  .companyname .container {
+    width: 1225px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    padding-top: 20px; }
+    .companyname .container span {
+      color: #808080;
+      font-size: 13px; }
+
+.btn {
+  position: fixed;
+  bottom: 150px;
+  right: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: #29b572;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 8px; }
